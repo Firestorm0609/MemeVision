@@ -1,0 +1,14 @@
+{
+  "crons": [
+    {
+      "path": "/api/check",
+      "schedule": "*/10 * * * *"
+    }
+  ],
+  "functions": {
+    "app.py": {
+      "maxDuration": 300
+    }
+  }
+}
+
