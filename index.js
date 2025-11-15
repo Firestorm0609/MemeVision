@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
 
 // --- PUT YOUR SECRETS HERE ---
-const BOT_TOKEN = '8336710006:AAE0Z-bKeRQN7QTphSB3WQR3kZLMAApgsFM'; // Paste your token from BotFather
-const CHAT_ID = '727210504'; // Paste your ID from @getmyid_bot
+const BOT_TOKEN = process.env.BOT_TOKEN; // Reads from Vercel's secrets
+const CHAT_ID = process.env.CHAT_ID;     // Reads from Vercel's secrets
 // -----------------------------
 
 // Setup the bot and server
